@@ -45,8 +45,7 @@ class Control():
 
     def load(self):
         """Try to load all modules found in the modules folder"""
-        print("\n")
-        print("Loading modules...")
+        print("\nWelcome to the Dance Party! Time to start playing song.\n")
         self.modules = []
         path = os.path.join(os.path.dirname(__file__), "modules")
         directory = pkgutil.iter_modules(path=[path])
@@ -58,8 +57,6 @@ class Control():
                         and hasattr(module, "moduleName") \
                         and hasattr(module, "execute"):
                     self.modules.append(module)
-                    print("The module '{0}' has been loaded, "
-                          "successfully.".format(name))
                 else:
                     print("[ERROR] The module '{0}' is not in the "
                           "correct format.".format(name))
@@ -97,7 +94,6 @@ class Control():
                 if not command:
                     raise ControlException("No command found.")
 
-                print("The word(s) '" + command + "' have been said")
                 for module in self.modules:
                     foundWords = []
                     for word in module.commandWords:
@@ -108,10 +104,15 @@ class Control():
                         response = module.execute(command)
                         if response == "ERROR":
                             print("Invalid command. Try again.")
+                        if response == "Setup":
+                            print("Setup complete.")
                         else:
                             index = response.find('#$#');
                             beats = json.loads(response[index+3:])
-                            # print(answer[index+3:])
+                            index2 = response.find('#%#')
+                            artist = response[0:index2]
+                            song = response[index2+3:index]
+                            print("Playing " + song.upper() + " by " + artist.upper())
                                 # print(response[index+3:])
                                 # print(response[0:index])
                             self.clientRP.publish("raspberrypi/lcd", response[0:index])
@@ -120,13 +121,10 @@ class Control():
                         #     print("[ERROR] There has been an error "
                         #           "when running the {0} module".format(
                         #               module.moduleName))
-                    else:
-                        print("\n")
             except (TypeError, ControlException):
                 pass
             except Exception as exc:
-                print("Song or band does not exist. Or the song is not included in API")
-                print("Try Again")
+                print("The request is not included in the API. Try Again.")
             time.sleep(1)
 
 
