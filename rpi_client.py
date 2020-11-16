@@ -74,7 +74,7 @@ def scroll(call):
     index2 = call.find("#%#")
     artist = call[0:index2].upper() + "                "
     artist = artist[0:16]
-    song = "                " + call[index2+3:].upper() + "              "
+    song = "                " + call[index2+3:].upper() + "                "
     while True:
         try:
             scrollText = song[index:index+16]
