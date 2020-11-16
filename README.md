@@ -24,7 +24,7 @@ To see a demonstration of how to run and test the project use [this link](https:
 - Link your iOS's Notes with the project's email (Look at the first link for more help).
   - Project Email Username: ee250projecttemp@gmail.com
   - Project Email Password: EE250temp
-- Open up siri_connector.py on your device/laptop and insert your Spotify username. Save.
+- Open up spotifyPlayer.py on your device/laptop and insert your Spotify username at Line 20. Save.
 - Run the siri_connector.py on your device/laptop
 - Open your device/laptop and open [Spotify](spotify.com) and click "Open Web Player"
 - Say to Siri on your iOS: "Note Spotify test Artist setup"
