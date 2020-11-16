@@ -1,20 +1,18 @@
-#You can import any required modules here
 import sys
 sys.path.insert(1, '/home/ee250/project-pjarvis')
 import spotifyPlayer
-#This can be anything you want
-moduleName = "Spotify Player"
 
-#All of the words must be heard in order for this module to be executed
+moduleName = "Spotify Player"
 commandWords = ["spotify", "artist", "song"]
 
 def execute(command):
-    #Write anything you want to be executed when the commandWords are heard
-    #The 'command' paramete"r is the command you speak
+    #get the response in the Note
     terms = command.split()
+    #if the first one isn't Spotify then the command is wrong
     if(terms[0] != "spotify"):
         return "ERROR"
 
+    #parse the command so that we have the song and artist name
     idx = 0
     band = 0
     song = 0
@@ -24,7 +22,7 @@ def execute(command):
     	if(terms[i] == "song"):
     		song = i;
 
-
+    #also bad format of command
     if(band+1 == song) or (band > song):
         return "ERROR"
 
@@ -34,7 +32,7 @@ def execute(command):
     	if (i != (song-1)):
     		bandStr = bandStr + " "
 
-
+    #another bad format of command
     if(song+1 == len(terms)):
         return "ERROR"
     songStr = ""
@@ -42,5 +40,7 @@ def execute(command):
     	songStr = songStr + terms[i]
     	if (i != (len(terms)-1)):
     		songStr = songStr + " "
+            
+     #once we have the names, we pass it to the object that handles the API
     help = spotifyPlayer.spotifyPlayer()
     return help.begin(bandStr, songStr)
