@@ -6,7 +6,7 @@ By Patrick Jarvis
 
 ### Requirements:
 You will need:
-- An iOS with Gmail application
+- An iOS
 - A device/laptop that can run Python scripts, SSH to the Raspberry Pi, and open Spotify Web Player
 - A Raspberry PI with an LED in **D4** port and the Grove-LCD RGB Backlight in **I2C-3** port
 - All of these Python modules
