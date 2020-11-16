@@ -27,10 +27,10 @@ To see a demonstration of how to run and test the project use [this link](https:
 - Open up spotifyPlayer.py on your device/laptop and insert your Spotify username at Line 20. Save.
 - Run the siri_connector.py on your device/laptop
 - Open your device/laptop and open [Spotify](spotify.com) and click "Open Web Player"
-- Say to Siri on your iOS: "Note Spotify test Artist setup"
+- Say to Siri on your iOS: *Note Spotify test Artist start*
 - This will create a Google popup that shows a blank tab but a unique URL. Copy that URL and paste it into the terminal and hit Enter.
 - You are all set! Now you can use Siri on your iOS and say the below commands to play your songs!
-  - To play a song: Say to Siri "Note Spotify Artist *artist_name* Song *song_name*
+  - To play a song: Say to Siri "Note Spotify Artist *artist_name* Song *song_name*"
     - Example: "Note Spotify Artist Imagon Dragons Song Demons"
   - To quit running: Say "Note quit control"
   
