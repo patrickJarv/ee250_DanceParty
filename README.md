@@ -30,6 +30,7 @@ To see a demonstration of how to run and test the project use [this link](https:
 - Open your device/laptop and open [Spotify](spotify.com) and click "Open Web Player". **Recommended to not do this in a Virtual Machine**
 - Say to Siri on your iOS: "Note Spotify test Artist start"
 - This will create a Google popup that shows a blank tab but a unique URL. Copy that URL and paste it into the terminal and hit Enter.
+- Lastly, run the rpi_client.py on the Raspberry Pi
 - You are all set! Now you can use Siri on your iOS and say the below commands to play your songs!
   - To play a song: Say to Siri "Note Spotify Artist *artist_name* Song *song_name*"
     - Example: "Note Spotify Artist Imagon Dragons Song Demons"
