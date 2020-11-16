@@ -11,7 +11,7 @@ You will need:
 - A device/laptop that can run Python scripts, SSH to the Raspberry Pi, and open Spotify Web Player
 - A Raspberry PI with an LED in **D4** port and the Grove-LCD RGB Backlight in **I2C-3** port
 - All of these Python modules
-   - sys, mqtt, json, random, time, multiprocessing. spotipy, os, requests , pkgutil, email, imaplib
+   - sys, mqtt, json, random, time, multiprocessing, spotipy, os, requests , pkgutil, email, imaplib
 
 ### Installation and Demonstrations
 Note: After doing all nine labs for EE250, I only had to install spotipy
