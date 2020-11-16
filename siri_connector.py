@@ -98,12 +98,15 @@ class Control():
                         if str(word) in command:
                             foundWords.append(str(word))
                     if len(foundWords) == len(module.commandWords):
-                        # try:
+                        #A command has been said correctly so we can execute the message
                         response = module.execute(command)
+                        #if the command was formatted wrong
                         if response == "ERROR":
-                            print("Invalid command. Try again.")
+                            print("Invalid command. Try again.")\
+                        #if we were setting up the token
                         if response == "Setup":
                             print("Setup complete.")
+                        #otherwise we have the song JSON object returned and we need to parse it and send to MQTT
                         else:
                             index = response.find('#$#');
                             beats = json.loads(response[index+3:])
