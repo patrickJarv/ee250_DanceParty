@@ -101,7 +101,6 @@ class spotifyPlayer:
 					    	continue
 					    response = spotify.current_playback()
 					    while True:
-					    	#print(response['is_playing'])
 					    	if(response['is_playing']):
 					    		break
 					    	response = spotify.current_playback()
