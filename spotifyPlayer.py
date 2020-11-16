@@ -14,10 +14,16 @@ class spotifyPlayer:
 		pass
 
 	def begin(self, bandStr=None, songStr=None):
+		
+		###### INSERT SPOTIFY USERNAME HERE #####
+		
+		username = ""
+		
+		#########################################
+		
 		if(bandStr is None or songStr is None):
 			print("no band or song name given")
 			return
-		username = "pjarvite"
 		scope = 'user-read-private user-read-playback-state user-modify-playback-state'
 		self.token = util.prompt_for_user_token(username, scope)
 		songStrExtra = songStr + " - single version"
