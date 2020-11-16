@@ -6,7 +6,7 @@ By Patrick Jarvis
 
 ### Requirements:
 You will need:
-- An iOS
+- An iOS device
 - A Spotify Premium account
 - A device/laptop that can run Python scripts, SSH to the Raspberry Pi, and open Spotify Web Player
 - A Raspberry PI with an LED in **D4** port and the Grove-LCD RGB Backlight in **I2C-3** port
@@ -23,7 +23,7 @@ Additional features of the project (for rubric purposes, this is part of my demo
 
 ### How to Run (Initialization)
 - Clone the repository in both the device/laptop and RPi.
-- Link your iOS's Notes with the project's email (Look at the first link for more help).
+- Link your iOS's Notes Default Account with the project's email (Look at the first link for more help).
   - Project Email Username: ee250projecttemp@gmail.com
   - Project Email Password: EE250temp
 - Open up spotifyPlayer.py on your device/laptop and insert your Spotify username at Line 20. Save.
