@@ -1,4 +1,4 @@
-In the COVID-19 world, we are all isolated, so why not convert your Raspberry Pi into a mini dance creator with a scrolling display of your songs while also having an LED that flickers to the beat of the music? This project allows you 
+In the COVID-19 world, we are all isolated, so why not convert your Raspberry Pi into a mini dance creator with a scrolling display of your songs while also having an LED that flickers to the beat of the music? So, this project allows you to play these sick beats through your iPhone's Siri. Enjoy!
 
 ## Welcome to the Party!
 EE250 IOT Project - Spotify API and SiriControl\
