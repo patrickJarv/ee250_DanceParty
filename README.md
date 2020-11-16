@@ -16,9 +16,10 @@ You will need:
 ### Installation and Demonstrations
 Note: After doing all nine labs for EE250, I only had to install spotipy
 To install Spotipy: run `pip install spotipy --upgrade`\
-To link your iOS's Notes to the project's email in order to run the Siri Control click [here](https://pages.github.com/).\
-To see how to initialize the siri_connector.py, use [this link](https://bing.com/).\
-To see a demonstration of how to run and test the project use [this link](https://google.com/).
+To link your iOS's Notes to the project's email in order to run the Siri Control click [here](https://drive.google.com/file/d/1wRCpC8f-u29_QZx1BR_u3eci0t-CyRIV/view?usp=sharing).\
+To see how to initialize the siri_connector.py, use [this link](https://drive.google.com/file/d/16qXkwm7uudCAdTCI-L9hDtE_yDg3GhUK/view?usp=sharing).\
+To see a demonstration of how to run and test the project use [this link](https://drive.google.com/file/d/1NCj5qbpdBkFYDYdTS05wmRlo0hEg2a_6/view?usp=sharing).\
+Additional features of the project (for rubric purposes, this is part of my demonstration) are [here](https://drive.google.com/file/d/16or9nAcAfTbg3WXOBbrZLWkcEawUp_qw/view?usp=sharing)
 
 ### How to Run (Initialization)
 - Clone the repository in both the device/laptop and RPi.
