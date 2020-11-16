@@ -6,12 +6,10 @@ import os
 import pkgutil
 import paho.mqtt.client as mqtt
 
-##########################################
+#Credit to Sanjeet Chatterjee who I referenced for this SiriControl-System
 
 username = "ee250projecttemp"
 password = "EE250temp"
-
-##########################################
 
 
 class ControlException(Exception):
@@ -113,14 +111,8 @@ class Control():
                             artist = response[0:index2]
                             song = response[index2+3:index]
                             print("Playing " + song.upper() + " by " + artist.upper())
-                                # print(response[index+3:])
-                                # print(response[0:index])
                             self.clientRP.publish("raspberrypi/lcd", response[0:index])
                             self.clientRP.publish("raspberrypi/led", response[index+3:])
-                        # except:
-                        #     print("[ERROR] There has been an error "
-                        #           "when running the {0} module".format(
-                        #               module.moduleName))
             except (TypeError, ControlException):
                 pass
             except Exception as exc:
@@ -132,14 +124,12 @@ class Control():
 def on_connect(client, userdata, flags, rc):
     print("Connected to server (i.e., broker) with result code "+str(rc))
 
-    #subscribe to topics of interest here
 
 #Default message callback. Never used
 def on_message(client, userdata, msg):
     print("on_message: " + msg.topic + " " + str(msg.payload, "utf-8"))
 
 if __name__ == '__main__':
-    #subprocess.run(["export"], ["SPOTIPY_CLIENT_ID=1b237c5da7d04e7f91638b02b735bdc0"])
     os.environ["SPOTIPY_CLIENT_ID"] = "1b237c5da7d04e7f91638b02b735bdc0"
     os.environ["SPOTIPY_CLIENT_SECRET"]= "93ceac2198fe4ee6af0bb614847e0a0d"
     os.environ["SPOTIPY_REDIRECT_URI"]= "https://google.com"
