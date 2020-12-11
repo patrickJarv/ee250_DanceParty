@@ -38,4 +38,4 @@ Additional features of the project (for rubric purposes, this is part of my demo
   - To quit running: Say "Note quit control"
   
 ### Writeup of Protocols and Nodes Utilized
-Documentation found [here](https://docs.google.com/document/d/1AVjEMhZv4gkq3RwCr8Rqr1_Q0uC9sA6JXzk58-4u1Vo/edit?usp=sharing)
+ - Documentation found [here](https://docs.google.com/document/d/1AVjEMhZv4gkq3RwCr8Rqr1_Q0uC9sA6JXzk58-4u1Vo/edit?usp=sharing)
